@@ -10,7 +10,8 @@ export default function ShippingForm() {
 
   const calculatePrice = (packageType, weight) => {
     if (packageType === 'laptop') return 50;
-    if (packageType === 'phone') return 30;
+    if (packageType === 'iphone') return 30;
+    if (packageType === 'android') return 25;
     return weight * 12;
   };
 
@@ -103,8 +104,8 @@ export default function ShippingForm() {
           >
             <option value="">Select Package Type</option>
             <option value="laptop">Laptop ($50)</option>
-            <option value="phone">iPhone ($30)</option>
-            <option value="phone">Android ($30)</option>
+            <option value="iphone">iPhone ($30)</option>
+            <option value="android">Android ($30)</option>
             <option value="other">Other Package</option>
           </select>
           {errors.packageType && <p className="form-error">{errors.packageType.message}</p>}
