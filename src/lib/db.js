@@ -2,6 +2,7 @@ import { sql } from '@vercel/postgres';
 
 export async function submitShippingRequest(data) {
   try {
+    console.log('Attempting database connection...');
     const result = await sql`
       INSERT INTO shipping_submissions 
       (name, phone_number, shipping_from, shipping_to, package_type, package_weight, estimated_price)
@@ -10,6 +11,7 @@ export async function submitShippingRequest(data) {
        ${data.packageType}, ${data.packageWeight}, ${data.estimatedPrice})
       RETURNING id;
     `;
+    console.log('Database insert successful:', result);
     return result.rows[0].id;
   } catch (error) {
     console.error('Error submitting shipping request:', error);
