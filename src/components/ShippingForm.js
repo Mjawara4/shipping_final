@@ -77,14 +77,19 @@ export default function ShippingForm() {
           />
           {errors.shippingFrom && <p className="form-error">{errors.shippingFrom.message}</p>}
         </div>
-
         <div className="form-group">
           <label className="form-label">Shipping To</label>
-          <input 
-            {...register('shippingTo', { required: 'Shipping destination is required' })}
-            className="form-input"
-            placeholder="City, State"
-          />
+          <select 
+            {...register('shippingToCountry')}
+            className="form-select"
+          >
+            <option value="">Select Country (Option)</option>
+            <option value="Gambia">Gambia</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            {/* Add more countries as needed */}
+          </select>
           {errors.shippingTo && <p className="form-error">{errors.shippingTo.message}</p>}
         </div>
 
@@ -98,7 +103,8 @@ export default function ShippingForm() {
           >
             <option value="">Select Package Type</option>
             <option value="laptop">Laptop ($50)</option>
-            <option value="phone">Phone ($30)</option>
+            <option value="phone">iPhone ($30)</option>
+            <option value="phone">Android ($30)</option>
             <option value="other">Other Package</option>
           </select>
           {errors.packageType && <p className="form-error">{errors.packageType.message}</p>}
