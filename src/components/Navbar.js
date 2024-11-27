@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-content">
         <Link href="/" className="navbar-logo">
-          Swift Ship Services
+        Mo's  Express GP Services
         </Link>
         <div className="navbar-links">
           <Link href="/" className={pathname === '/' ? 'active' : ''}>
