@@ -4,10 +4,10 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <h3>Contact Us</h3>
-            <p>📞 Phone: +220 123 4567</p>
-            <p>📧 Email: info@swiftship.com</p>
-            <p>🏢 Address: 123 Shipping Lane,</p>
-            <p>Banjul, The Gambia</p>
+            <p>📞 Phone: +1 (347) 389-3821</p>
+            <p>📧 Email: Momultiservicesllc@gmail.com</p>
+            <p>🏢 Address: Bronx, New york,</p>
+            
           </div>
           
           <div className="footer-section">
@@ -26,14 +26,14 @@ export default function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/mo_multiservice" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-tiktok"></i>
               </a>
             </div>
-            <p style={{ marginTop: '15px' }}>Connect with us on social media for updates and news!</p>
+            <p style={{ marginTop: '15px' }}>Connect with us on social media for updates</p>
           </div>
         </div>
       </footer>
