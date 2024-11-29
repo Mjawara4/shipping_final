@@ -2,7 +2,7 @@ export default function Home() {
     return (
       <div className="container">
         <div className="home-cta">
-          <h1>Welcome to Swift Ship Services</h1>
+          <h1>Welcome to MO Multiservices Shipping</h1>
           <p>Your trusted shipping partner for all your package needs</p>
           
           <div className="home-cta-buttons">

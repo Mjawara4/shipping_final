@@ -18,21 +18,8 @@ export default function EnquiryForm() {
 
   return (
     <div className="form-container">
-      <h2 className="form-title">Customer Enquiry</h2>
       
-      <div className="form-group">
-        <h3>Frequently Asked Questions</h3>
-        <ul className="faq-list">
-          <li>What areas do we serve?</li>
-          <p>We ship between Gambia and USA</p>
-          <li>How long does shipping take?</li>
-          <p>Shipping normal take 2 to 3 days to reach destionation</p>
-          <li>What are our packaging requirements?</li>
-          <p>We send almost all types all packages, but we do have some restricted item we dont accept. Please call us more more details</p>
-          <li>How do we handle fragile items?</li>
-          <p>All package are handle with care. Be sure that your package will gwt to its destination safely</p>
-        </ul>
-      </div>
+      <h2 className="form-title">Customer Enquiry</h2>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
@@ -94,6 +81,23 @@ export default function EnquiryForm() {
           Submit Enquiry
         </button>
       </form>
+
+<br></br>
+      
+      <div className="form-group">
+        <h3 class="header-faq" >Frequently Asked Questions</h3>
+        <ul className="faq-list">
+          <li class="li-bold">What areas do we serve?</li>
+          <p>We ship between Gambia and USA</p>
+          <li class="li-bold">How long does shipping take?</li>
+          <p>Shipping normal take 2 to 3 days to reach destionation</p>
+          <li class="li-bold">What are our packaging requirements?</li>
+          <p>We send almost all types all packages, but we do have some restricted item we dont accept. Please call us more more details</p>
+          <li class="li-bold">How do we handle fragile items?</li>
+          <p>All package are handle with care. Be sure that your package will gwt to its destination safely</p>
+        </ul>
+      </div>
+
     </div>
   );
 }
