@@ -24,9 +24,13 @@ export default function EnquiryForm() {
         <h3>Frequently Asked Questions</h3>
         <ul className="faq-list">
           <li>What areas do we serve?</li>
+          <p>We ship between Gambia and USA</p>
           <li>How long does shipping take?</li>
+          <p>Shipping normal take 2 to 3 days to reach destionation</p>
           <li>What are our packaging requirements?</li>
+          <p>We send almost all types all packages, but we do have some restricted item we dont accept. Please call us more more details</p>
           <li>How do we handle fragile items?</li>
+          <p>All package are handle with care. Be sure that your package will gwt to its destination safely</p>
         </ul>
       </div>
 
@@ -47,12 +51,12 @@ export default function EnquiryForm() {
             {...register('phoneNumber', { 
               required: 'Phone number is required',
               pattern: {
-                value: /^[0-9]{10}$/,
-                message: 'Please enter a valid 10-digit phone number'
+                value: /^[0-9]{7}$/,
+                message: 'Please enter a valid phone number'
               }
             })}
             className="form-input"
-            placeholder="1234567890"
+            placeholder="123456789"
           />
           {errors.phoneNumber && <p className="form-error">{errors.phoneNumber.message}</p>}
         </div>
