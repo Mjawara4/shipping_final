@@ -94,7 +94,7 @@ export default function EnquiryForm() {
           <li class="li-bold">What are our packaging requirements?</li>
           <p>We send almost all types all packages, but we do have some restricted item we dont accept. Please call us more more details</p>
           <li class="li-bold">How do we handle fragile items?</li>
-          <p>All package are handle with care. Be sure that your package will gwt to its destination safely</p>
+          <p>All package are handle with care. Rest asure that your package will get to its destination safely</p>
         </ul>
       </div>
 
