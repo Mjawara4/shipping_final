@@ -1,5 +1,6 @@
 import { sql } from '@vercel/postgres';
 
+//  send customer info to database
 export async function submitShippingRequest(data) {
   try {
     console.log('Attempting database connection...');
